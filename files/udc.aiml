@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category>
+    <pattern>HALO</pattern>
+    <template>Shalom! Selamat datang di VerseFinder. Saya siap membantumu mencari ayat dan renungan. Ketik "MENU" untuk melihat apa yang bisa saya lakukan.</template>
+  </category>
+
+  <category>
+    <pattern>HAI</pattern>
+    <template><srai>HALO</srai></template>
+  </category>
+
+  <category>
+    <pattern>SELAMAT PAGI</pattern>
+    <template>Selamat pagi! Kiranya damai sejahtera menyertaimu hari ini. Ada ayat yang ingin dicari?</template>
+  </category>
+
+  <category>
+    <pattern>SAMPAI JUMPA</pattern>
+    <template>Sampai jumpa! Tuhan memberkati. Jangan lupa kembali lagi untuk mencari Firman Tuhan.</template>
+  </category>
+
+
+<category>
+    <pattern>MENU</pattern>
+    <template>
+      Berikut adalah hal yang bisa kamu tanyakan:
+      1. "Cari ayat tentang [Topik]" (Misal: Cari ayat tentang Kasih)
+      2. "Buatkan renungan"
+      3. "Siapa pembuat aplikasi ini?"
+      4. "Info Kampus"
+    </template>
+  </category>
+
+  <category>
+    <pattern>BANTUAN</pattern>
+    <template><srai>MENU</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HELP</pattern>
+    <template><srai>MENU</srai></template>
+  </category>
+
+
+<category>
+    <pattern>CARI AYAT TENTANG *</pattern>
+    <template>
+      Sedang mencari ayat yang relevan dengan topik "<star/>"...
+      (Di sini sistem akan menampilkan ayat-ayat Alkitab tentang <star/>).
+      Apakah kamu ingin dibuatkan renungan singkat dari topik ini?
+    </template>
+  </category>
+
+  <category>
+    <pattern>CARI KATA *</pattern>
+    <template><srai>CARI AYAT TENTANG <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>BUATKAN RENUNGAN</pattern>
+    <template>Tentu. Renungan singkat akan dibuat berdasarkan ayat yang kamu pilih. Renungan ini ditulis untuk menguatkan imanmu.</template>
+  </category>
+  
+  <category>
+    <pattern>RENUNGAN</pattern>
+    <template><srai>BUATKAN RENUNGAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>YA</pattern>
+    <that>APAKAH KAMU INGIN DIBUATKAN RENUNGAN SINGKAT DARI TOPIK INI</that>
+    <template>Baik, berikut adalah renungan singkat untukmu: [Sistem memuat renungan...]</template>
+  </category>
+
+
+<category>
+    <pattern>SIAPA PEMBUAT VERSEFINDER</pattern>
+    <template>
+      VerseFinder dikembangkan dengan penuh dedikasi oleh Devanska Uzieltama dan Ricky Fernando.
+    </template>
+  </category>
+
+  <category>
+    <pattern>SIAPA RICKY</pattern>
+    <template>Ricky Fernando adalah salah satu developer utama VerseFinder, mahasiswa FTI UNTAR angkatan 2022.</template>
+  </category>
+
+  <category>
+    <pattern>SIAPA DEVANSKA</pattern>
+    <template>Devanska Uzieltama adalah salah satu developer utama VerseFinder, mahasiswa FTI UNTAR angkatan 2022.</template>
+  </category>
+
+  <category>
+    <pattern>KULIAH DIMANA</pattern>
+    <template>Para developer berkuliah di Universitas Tarumanagara (UNTAR), Fakultas Teknologi Informasi, Angkatan 2022.</template>
+  </category>
+
+  <category>
+    <pattern>INFO KAMPUS</pattern>
+    <template><srai>KULIAH DIMANA</srai></template>
+  </category>
+
+
+<category>
+    <pattern>TERIMA KASIH</pattern>
+    <template>Sama-sama! Segala kemuliaan hanya bagi Tuhan. Ada lagi yang bisa dibantu?</template>
+  </category>
+
+  <category>
+    <pattern>AMIN</pattern>
+    <template>Amin! Kiranya Firman Tuhan menjadi pelita bagi kakimu.</template>
+  </category>
+
+  <category>
+    <pattern>APA ITU VERSEFINDER</pattern>
+    <template>
+      VerseFinder adalah aplikasi pencari ayat suci Kristen. Kamu bisa mengetik kata kunci (misal: 'Ketaatan') untuk menemukan ayat relevan, lalu meminta renungan singkat.
+    </template>
+  </category>
+
+
+<category>
+    <pattern>*</pattern>
+    <template>
+      Maaf, saya kurang mengerti maksud kalimat itu. 
+      Coba ketik "MENU" untuk melihat bantuan, atau ketik "Cari ayat tentang Kasih".
+    </template>
+  </category>
+
+</aiml>
